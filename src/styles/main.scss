@@ -154,6 +154,13 @@ header {
 .vote {
   padding-top: 335px;
   padding-bottom: 100px;
+  margin-bottom: 100px;
+
+  &-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   &__title {
     margin-bottom: 40px;
@@ -175,7 +182,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    float: left;
   }
 
   &__option {
@@ -213,7 +219,6 @@ header {
   }
 
   &__stats {
-    float: right;
     font-weight: 600;
     font-size: 54px;
     padding-bottom: 40px;
@@ -226,6 +231,125 @@ header {
     small {
       font-size: 16px;
       color: #6b6b6c;
+    }
+  }
+}
+
+.pros {
+  background-image: linear-gradient(
+      50deg,
+      #0b7572 45%,
+      rgba(11, 117, 114, 0.3) 45% 55%,
+      transparent 55%
+    ),
+    url("../img/image-track.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 160px 50px;
+  margin-bottom: 100px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 48px;
+    color: #ffffff;
+    width: 362px;
+  }
+}
+
+.guarantees {
+  padding-top: 70px;
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 40%;
+
+    img {
+      margin-right: 40px;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      color: #6b6b6c;
+    }
+  }
+}
+
+.completed {
+  margin-bottom: 200px;
+
+  &__title {
+    margin-bottom: 55px;
+
+    h2 {
+      font-weight: 600;
+      font-size: 48px;
+    }
+    p {
+      width: 504px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #6b6b6c;
+    }
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-bottom: 55px;
+  }
+
+  &__card {
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+
+    width: 393px;
+
+    &-info {
+      padding: 24px 0 56px 32px;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      color: #6b6b6c;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #ffce50;
+    }
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    input {
+      cursor: pointer;
     }
   }
 }
