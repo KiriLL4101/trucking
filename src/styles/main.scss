@@ -353,3 +353,91 @@ header {
     }
   }
 }
+
+.attracted {
+  .container {
+    padding: 85px 67px;
+    background-image: url("../img/hieroglyph.png"),
+      linear-gradient(50deg, #0b7572, #0b7572);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    color: #ffffff;
+  }
+}
+
+.attracted-cont {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 28px 32px 40px 32px;
+  width: 652px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #d7d7dd;
+
+    p {
+      font-weight: 400;
+      font-size: 11px;
+      color: #6b6b6c;
+      width: 274px;
+    }
+  }
+
+  &__table {
+    &--head {
+      display: flex;
+      background: #0b7572;
+      padding: 4px 0;
+      > div {
+        font-weight: 600;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+        padding: 18px 36px;
+      }
+
+      > div:not(:last-child) {
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &--body{
+      padding-top: 4px;
+    }
+
+    &--row {
+      display: flex;
+    }
+
+    &--cell {
+      padding: 22px 16px 65px;
+      font-size: 14px;
+      color: #6b6b6c;
+
+      strong {
+        margin-top: 10px;
+        font-weight: 600;
+        color: #363738;
+      }
+    }
+
+    &--row:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    &--cell:not(:last-child) {
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+}
